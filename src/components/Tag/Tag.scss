@@ -1,0 +1,20 @@
+@import "src/variables";
+
+.tag {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 12px;
+  color: $white;
+  text-transform: uppercase;
+  margin-right: 5px;
+  padding: 0 5px;
+  height: 16px;
+  z-index: 25;
+  &:hover {
+    opacity: .8;
+  }
+
+}

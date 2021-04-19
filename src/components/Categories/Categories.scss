@@ -1,0 +1,53 @@
+@import "src/variables";
+
+.categories {
+  height: 30px;
+  margin: 25px 0 15px -20px;
+
+}
+
+.categories__list {
+  display: flex;
+  list-style: none;
+  height: inherit;
+}
+
+.categories__list-item {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 16.5px;
+  font-family: 'Cuprum', sans-serif;
+  text-transform: uppercase;
+  color: $white;
+  height: 100%;
+  margin-right: 5px;
+  padding: 0 25px;
+  z-index: 10;
+
+  &:only-child::before {
+    background-color: $dark !important;
+  }
+
+  &:first-child {
+    margin-left: -20px;
+    padding-left: 40px;
+  }
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: $dark;
+    transform: skewX(40deg);
+  }
+
+  &:nth-child(1)::before {
+    background-color: $accent
+  }
+}

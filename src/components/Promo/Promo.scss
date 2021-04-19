@@ -1,0 +1,53 @@
+@import "src/variables";
+@import "src/mixin";
+
+.promo {
+  display: flex;
+  height: 355px;
+  width: 104.3%;
+  margin: 0 -20px;
+  background-color: $dark;
+}
+
+.promo__post {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px 25px 15px 25px;
+  background-color: #363636;
+
+  @include post-hover;
+  @include bottomShadowGradient;
+}
+
+.promo__post:nth-child(1) {
+  width: 70%;
+  background-color: #363777;
+}
+
+.promo__post-title {
+  font-family: 'Cuprum', sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  text-shadow: 1px 1px 2px black;
+  color: $white;
+  margin-bottom: 5px;
+
+  .comments-counter {
+    top: -6px;
+  }
+}
+
+.promo__post-title, .promo__post-author {
+  position: relative;
+  z-index: 15;
+}
+
+.promo__post-author {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13px;
+  color: $greyLight;
+}

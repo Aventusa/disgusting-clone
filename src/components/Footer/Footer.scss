@@ -1,0 +1,31 @@
+@import 'src/variables';
+
+.footer {
+  margin: 15px 15px 0 15px;
+  border-top: 4px solid #363636;
+  nav {
+    min-height: 65px;
+  }
+  .navbar__list {
+    flex-wrap: wrap;
+    min-height: inherit;
+  }
+}
+
+.footer__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer__copyright {
+  font-family: 'Ubuntu', sans-serif;
+  color: $black;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 10px;
+
+  span {
+    color: $white;
+  }
+}

@@ -1,5 +1,22 @@
+@import "variables";
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.app {
+  background-color: #4a4646;
+  background-image: url("images/bgnew.jpg");
+  min-height: 100vh;
+}
+
+.content {
+  overflow: hidden;
+  max-width: $max-width-content;
+  background-color: $white;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 15px 20px 0 20px;
 }

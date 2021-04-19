@@ -1,0 +1,105 @@
+@import "src/variables";
+@import "src/animations";
+@import "src/mixin";
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  height: 430px;
+  margin: 0 -20px;
+}
+
+.slider {
+  display: flex;
+  height: 80%;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.slider__display {
+  position: relative;
+  display: none;
+  cursor: pointer;
+  background-color: #4a4646;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 70%;
+  transition: $transitionDefault;
+
+  @include post-hover;
+
+  &.active {
+    display: flex;
+    animation: fade-in .5s ease-out;
+  }
+
+  .comments-counter {
+    top: -8px;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(32,41,45,0.5);
+  }
+}
+
+.slider__display-title {
+  padding: 0 85px;
+  color: $white;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.2;
+  font-family: 'Cuprum', sans-serif;
+}
+
+.slider__display-title, .slider__display-author {
+  position: relative;
+  z-index: 1;
+}
+
+.slider__display-author {
+  font-family: 'Ubuntu', sans-serif;
+  color: #b5e2ff;
+  font-size: 13px;
+}
+
+
+.slider__tabs {
+  width: 30%;
+}
+.slider__tabs-tab {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  a {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+    padding: 0 10%;
+    text-decoration: none;
+    color: #483a3a;
+  }
+
+  &.active, &:hover {
+    background-color: $dark;
+    a {
+      color: $white;
+    }
+  }
+}
