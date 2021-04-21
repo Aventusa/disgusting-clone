@@ -103,3 +103,9 @@
     }
   }
 }
+
+@media (max-width: $mobile-start-width) {
+  .slider-wrapper {
+    display: none;
+  }
+}

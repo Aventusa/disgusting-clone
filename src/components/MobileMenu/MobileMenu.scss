@@ -1,0 +1,36 @@
+@import "src/variables";
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 50px;
+  width: 50%;
+  background-color: $dark;
+  min-height: 100vh;
+  min-width: 320px;
+  height: 100%;
+  z-index: 50;
+  opacity: 1;
+  transition: $transitionDefault;
+  transform: translateX(100%);
+
+  &.open {
+    transform: translateX(0);
+  }
+  nav {
+    .navbar__list {
+      flex-direction: column;
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media (min-width: $mobile-start-width) {
+  .mobile-menu {
+    opacity: 0;
+  }
+}
+
