@@ -9,13 +9,13 @@ function Categories({list}) {
                 <ul className='categories__list'>
                     {
                         list.map(item => <li
-                            key={item}
-                            className="categories__list-item"
+                                key={item}
+                                className="categories__list-item"
                             >{item}</li>
                         )}
                 </ul>
             </div>
-        );
+        )
     }
     return null
 }

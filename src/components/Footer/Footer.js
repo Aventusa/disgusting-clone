@@ -9,7 +9,7 @@ function Footer() {
 
     return (
         <footer className='footer'>
-            <Nav items={items} />
+            <Nav items={items}/>
             <img src={bulletImg} alt="Дура" width='100px' className='footer__img'/>
             <div className="footer__copyright">
                 DISGUSTING CLONE © 18+ <span>пзд</span>

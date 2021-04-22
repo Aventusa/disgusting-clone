@@ -9,9 +9,9 @@ function Slider({data}) {
     const [activeSlideIndex, setActiveSlideIndex] = useState(0)
 
     function onMouseOverHandle(index) {
-       if (activeSlideIndex === index) {
-           return
-       }
+        if (activeSlideIndex === index) {
+            return
+        }
         setActiveSlideIndex(index)
     }
 
@@ -33,7 +33,7 @@ function Slider({data}) {
                         </div>
                     )
                 })}
-                <div className="slider__tabs" >
+                <div className="slider__tabs">
                     {data.slice(0, 5).map((data, i) => {
                         return (
                             <div

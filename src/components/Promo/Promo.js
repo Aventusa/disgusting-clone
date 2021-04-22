@@ -5,12 +5,9 @@ import './Promo.scss'
 
 
 function Promo({data}) {
-
-
     return (
         <section className='promo'>
             {
-
                 data.slice(0, 2).map(post => {
 
                     const style = {
@@ -29,7 +26,6 @@ function Promo({data}) {
                         </div>
                     )
                 })
-
             }
         </section>
     );

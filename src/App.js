@@ -7,7 +7,7 @@ import Post from './components/Post/Post';
 import Footer from './components/Footer/Footer';
 import Slider from './components/Slider/Slider';
 import MobileMenu from './components/MobileMenu/MobileMenu';
-import MobileMenuContext from './MobileMenuContext';
+import MobileMenuContext from './components/MobileMenu/MobileMenuContext';
 import tags from './components/Tag/tags';
 
 
